@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(https://img.freepik.com/free-vector/realistic-summer-background_52683-62823.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            position: sticky;
+            margin-top: 30px;
+            top: -10px;
+            background-color: white;
+            box-shadow: 1px 1px 1px grey;
+            z-index: 100;
+        }
+
+        .header-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section {
+            min-height: 80vh;
+        }
+
+        .logo {
+            font-size: 25px;
+            margin-left: 300px;
+        }
+
+        .nav {
+            display: flex;
+            margin-right: 300px;
+            font-size: 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+        }
+
+        .nav a:hover {
+            background-color: blue;
+        }
+
+        .home {
+            margin: 0 300px;
+            position: relative;
+            z-index: -10;
+        }
+
+        .home h1 {
+            padding-top: 100px;
+            font-size: 5rem;
+            color: white;
+            padding-bottom: 30px;
+        }
+
+        .home p {
+            font-size: 25px;
+            color: white;
+            width: 600px;
+        }
+
+        .home a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            top: 40px;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 15px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            transition: all 2s ease-in-out;
+        }
+
+        .home a:hover {
+            transform: scale(1.1);
+        }
+
+        #services {
+            margin: 100px 300px;
+        }
+
+        #services h1 {
+            padding-top: 80px;
+            font-size: 4rem;
+            color: black;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .card1 {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card1:hover {
+            transform: scale(1.05);
+            border-color: transparent;
+            background-color: white;
+        }
+
+        .card1 img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .card1 h3 {
+            font-size: 25px;
+            color: black;
+            padding: 15px 0;
+        }
+
+        .card1 p {
+            font-size: 20px;
+            color: black;
+        }
+
+        footer {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 80px 300px;
+        }
+
+        .footer1 h2 {
+            font-size: 25px;
+            font-weight: 600;
+            padding-right: 120px;
+            position: relative;
+        }
+
+        .footer1 h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background-color: red;
+            height: 3px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer1 li {
+            list-style: none;
+            padding-top: 15px;
+            font-size: 20px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .footer1 li:hover {
+            transform: translateX(20px);
+        }
+
+        .footer1 i {
+            font-size: 20px;
+            margin-right: 5px;
+            padding-right: 5px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-top: 15px;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            display: inline-block;
+            transition: all 2s ease-in-out;
+        }
+
+        .footer1 i:hover {
+            background-color: blue;
+            color: white;
+            border: 2px solid white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-item">
+            <div class="logo">
+                <h1>Travel</h1>
+            </div>
+    
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home">
+            <h1>Welcome to <br>Fuel Mind Travel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, vel? Ex tempora ratione tempore nostrum
+                neque. Eum tempora adipisci accusamus!</p>
+
+            <a href="">Let's Go Now</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h1>Our Services</h1>
+
+        <div class="cards">
+
+            <div class="card1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFxkn0JY0mbpaW0MfXjiaWh-wYiClKhQD8hA&s"
+                    alt="">
+                <h3>Ship Cruise</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consectetur!</p>
+            </div>
+
+            <div class="card1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJaXzKmYqEzRGYZanJhxN1vUGtGBI388WMjA&s"
+                    alt="">
+                <h3>Plane</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consectetur!</p>
+            </div>
+
+            <div class="card1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFxkn0JY0mbpaW0MfXjiaWh-wYiClKhQD8hA&s"
+                    alt="">
+                <h3>Ship Cruise</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consectetur!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer1">
+                <h2>Company</h2>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </div>
+
+            <div class="footer1">
+                <h2>Get Help</h2>
+                <li>FAQ</li>
+                <li>Shipping</li>
+                <li>Returns</li>
+                <li>Booking Status</li>
+            </div>
+
+            <div class="footer1">
+                <h2>Online shop</h2>
+                <li>Watch</li>
+                <li>Blog</li>
+                <li>Transport</li>
+            </div>
+
+            <div class="footer1">
+                <h2>Follow Us</h2>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
